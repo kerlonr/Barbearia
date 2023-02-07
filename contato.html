@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style-contato.css">
+
+    <title>Contato Barbearia Ribeiro</title>
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png"></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="BarbeariaRibeiro.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Seu nome">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" required placeholder="exemplo@gmail.com">
+            
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="30" rows="10" id="mensagem" class="input-padrao" placeholder="Sua mensagem"></textarea>
+
+            <fieldset>
+                <legend>Como prefere nosso contato?</legend>
+
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+            </fieldset>
+
+                    <fieldset>
+                        <legend>Qual o melhor horario para você?</legend>
+                        <select class="select">
+                            <option>Manhã</option>
+                            <option>Tarde</option>
+                            <option>Noite</option>
+                        </select>
+                    
+                    </fieldset>
+
+                <label><input type="checkbox" class="checkbox" checked> Gostaria de receber novidades da nossa barbearia por email?</label>
+
+            <input type="submit" value="Enviar Formulário">
+        </form>
+    </main>
+    <footer>
+        <img src="logo-branco.png";>
+        <p class="copyright">&copy; Copyright Barbearia Ribeiro - 2019</p>
+    </footer>
+</body>
+</html>
