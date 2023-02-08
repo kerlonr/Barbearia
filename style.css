@@ -1,7 +1,3 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
 header {
     background: #757575;
     padding: 20px 0;
@@ -66,12 +62,14 @@ nav a:hover {
 
 .produtos li:hover {
     border-color: #C78C19;
-    transition: 0.5s;
-    transform: scale(1.1);
 }
     
 .produtos li:active {
     border-color: chartreuse;
+}
+
+.produtos li:hover h2 {
+    font-size: 30px;
 }
 
 .produtos h2 {

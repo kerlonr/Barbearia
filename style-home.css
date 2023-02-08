@@ -1,47 +1,203 @@
-body  {
-    background: #CCCCCC;
-    padding: 40px;
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.titulo-principal {
-    padding-left: 20px;
+header {
+    background: #757575;
+    padding: 20px 0;
 }
 
-#banner {
+.caixa {
+    position: relative;
+    width: 1150px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding-right: 20px;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.produto-descriçao{
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.produto-preço {
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: #000000 3px solid;
+    border-radius: 50px;
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+    
+.produtos li:active {
+    border-color: chartreuse;
+}
+
+.produtos h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    background: url(bg.jpg);
+    padding:  40px 0;
+}
+
+.copyright {
+    color: white; 
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+/*codigo da pagina inicial*/
+.banner {
+    border-top: #000000 5px solid;
     width: 100%;
-}
-.titulo-centralizado {
-    text-align: center
-}
-
-
-p   {
-    text-align:center
-}
-
-#missao {
-    font-size:20px
-}
-
-em strong {
-    color:  #FF0000;
 }
 
 .beneficios {
-    background: #FFFFFF;
-    padding: 20px;
+    margin: 0 10%;
 }
 
-.itens {
+.principal {
+    margin: 0;
+}
+
+.texto-principal {
+    text-align: left;
+    margin-right: 10%;
+}
+
+.utensilios {
+    margin-left: 10%;
+    margin-right: 20px ;
+    margin-top: 80px;
+    width: 140px;
+    float: left;
+    border: black solid;
+    border-radius: 15px;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0 1em 0;
+    padding-right: 250px ;
+    font-weight: bold;
+}
+
+.titulo-principal2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    font-weight: bold;
+}
+
+.titulo-principal3 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em 0;
+    clear: left;
+    font-weight: bold;
+}
+
+.principal p {
+    margin: 0 0 1em;
+}
+
+.principal strong, .titulo-principal2 {
+    font-weight: bold;
+}
+
+.principal em {
     font-style: italic;
 }
 
-ul {
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {
+    font-weight: bold;
+}
+
+.lista-beneficios {
+    width: 40%;
     display: inline-block;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
 }
-.imagembeneficios {
-    width: 50%;
+
+.imagem-beneficios {
+    width: 60%;
+    padding: 0 0 3em;
+}
+
+.beneficios {
+    padding: 0 0 3em;
+}
+.mapa {
+    text-align: center;
+    margin: 0 10%;
+    padding: 0 0 3em;
+}
+.mapa h3 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 2em 0 20px 0;
+
+}.mapa p {
+    margin: 0 0 2em;
+}
+
+.video {
+    padding: top 2em;
+    width: 560px;
+    margin: 1em auto;
 }

@@ -5,35 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Barbearia Ribeiro</title>
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style-home.css">
+
+    <title>Barbearia Ribeiro</title>
 
 </head>
 <body>
     <header>
-        <h1 class="titulo-principal">Barbearia Ribeiro</h1>
+        <div class="caixa">
+            <h1><img src="logo.png" alt="Logo da Barbearia Ribeiro"></h1>
+
+            <nav>
+                <ul>
+                    <li><a href="BarbeariaRibeiro.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div>
-        <img id="banner" src="banner.jpg">
-            <h2 class="titulo-centralizado"><strong>Sobre a Barbearia Ribeiro</strong></h2>
 
-        <p>Localizada no coração da cidade a <strong>Barbearia Ribeiro</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2023, a <strong>Barbearia Ribeiro</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p>
+    <img class="banner" src="banner.jpg">
 
-        <p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+    <img class="utensilios" src="utensilios.jpg" alt="Utensilios da Barbearia Ribeiro">
 
-        <p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-    </div>
+    <main class="principal">
 
-    <div class="beneficios">
-        <h3 class="titulo-centralizado">Benefícios</h3>
-        <ul>
+        <h2 class="titulo-principal"><strong>Sobre a Barbearia Ribeiro</strong></h2>
+
+        <section class="texto-principal">
+
+            <p>Localizada no coração da cidade a <strong>Barbearia Ribeiro</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2023, a <strong>Barbearia Ribeiro</strong> já é destaque na cidade e conquista novos clientes a cada dia.</p>
+
+            <p class="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
+
+            <p2>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p2>
+        </section>
+    </main>
+
+    <section class="mapa">
+        <h3>Nosso Estabelecimento </h3>
+        <p> Nossa barbearia esta localizada no coração da cidade, venha até nós!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3534.9234562647925!2d-54.3034884!3d-27.6268872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f943827bc836bd%3A0xc1512e29a0fab98a!2sTECNICON%20Sistemas%20Gerenciais%20-%20Matriz!5e0!3m2!1spt-BR!2sbr!4v1675880682424!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="beneficios">
+        <h3 class="titulo-principal2">Benefícios</h3>
+        <div class="conteudo-beneficios">
+        <ul class="lista-beneficios">
             <li class="itens">Atendimento ao Cliente</li>
             <li class="itens">Espaço Diferenciado</li>
             <li class="itens">Localização</li>
             <li class="itens">Profissionais Qualificados</li>
-        </ul>
+            <li class="itens">Pontualidade</li>
+            <li class="itens">Limpeza</li>
+            <li class="itens">Educação</li>
+            <li class="itens">Relaxante</li>
+        </ul><img src="beneficios.jpg" class="imagem-beneficios">
+        </div>  
 
-        <img src="beneficios.jpg" class="imagembeneficios">
-    </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TW-LgJUiMX0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div> 
+
+    </section>
+    
+    <footer>
+        <img src="logo-branco.png" alt="Logo da Barbearia Ribeiro">
+        <p class="copyright">&copy; Copyright Barbearia Ribeiro - 2007</p>
+    </footer>
+
 </body>
 </html>
