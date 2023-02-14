@@ -97,10 +97,12 @@ footer {
     width: 100%;
 }
 
-.tela-principal {
-    background: linear-gradient(#FEFEFE 20%,#666666 80%)
+.background-principal {
+    background: linear-gradient(#FEFEFE 0%,#FEFEFE 20%, #888888 80%, #888888 100%)
 }
-
+.background-beneficios {
+    background: #888888;
+}
 .beneficios {
     margin: 0 10%;
 }
@@ -117,11 +119,11 @@ footer {
 .utensilios {
     margin-left: 10%;
     margin-right: 20px ;
-    margin-top: 45px;
-    width: 140px;
+    margin-top: 80px;
+    width: 150px;
     float: left;
-    border:white solid;
     border-radius: 20px;
+    box-shadow: 10px 10px 15px#000000;
 }
 .utensilios:hover {
     transition: 0.5s;
@@ -131,25 +133,50 @@ footer {
 .titulo-principal {
     text-align: center;
     font-size: 2em;
-    margin: 20px 143px 1em 143px;
-    padding-right: 100px ;
+    padding: 1em 0px 1em 0px;
+    padding-right: 23% ;
     font-weight: bold;
 }
 
+.titulo-principal:before {
+    content: "[ ";
+}
+
+.titulo-principal:after {
+    content:" ]"
+}
+
 .titulo-principal3 {
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em 0;
-    clear: left;
     font-weight: bold;
+    font-size: 2em;
+    margin: 2em 0 20px 0;
+
+    text-align: center;
+    clear: left;
+}
+
+.titulo-principal3:before {
+    content: "[ ";
+}
+
+.titulo-principal3:after {
+    content:" ]"
 }
 
 .titulo-principal2 {
     text-align: center;
     font-size: 2em;
-    margin: 0 0 1em;
+    margin: 0px 0px 1em 0px;
     clear: left;
     font-weight: bold;
+}
+
+.titulo-principal2:before {
+    content: "[ ";
+}
+
+.titulo-principal2:after {
+    content:" ]"
 }
 
 .principal p {
@@ -173,6 +200,11 @@ footer {
     line-height: 1.5;
 }
 
+.itens::before {
+    content: "✦ ";
+    color: rgb(219, 219, 7);
+}
+
 .itens:first-child {
     font-weight: bold;
 }
@@ -185,9 +217,9 @@ footer {
 
 .imagem-beneficios {
     width: 50%;
-    margin: 0 0 3em;
-    border: white;
+    margin: 0px 0px 3em 60px;
     border-radius: 10px;
+    box-shadow: 10px 10px 15px#000000;
 }
 
 .imagem-beneficios:hover {
@@ -204,12 +236,8 @@ footer {
     margin: 0 10%;
     padding: 0 0 3em;
 }
-.mapa h3 {
-    font-weight: bold;
-    font-size: 2em;
-    margin: 2em 0 20px 0;
 
-}.mapa p {
+.mapa p {
     color: black;
     font-weight: bold;
     margin: 0 0 2em;
